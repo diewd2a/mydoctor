@@ -9,8 +9,9 @@ $events = json_decode($content, true);
 // Validate parsed JSON data
 if (!is_null($events['events'])) {
 	// Loop through each event
+	foreach($events as $key => $val){$key_text .= $key;}
 	foreach ($events['events'] as $key => $event) {
-		$key_text .= $key;
+		
 		// Reply only when message sent is in 'text' format
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
