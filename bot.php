@@ -2,7 +2,6 @@
 $access_token = 'ZZBpFxnTKtJQtRFjwwuHm+fFqRPk8Vw+bvFh6HtfsaNNkpc4F3+yRUPqFMUEgyaoWpbjQcvJ9+OXQSu89T5hpc5/Gqqmivcwv7LUip9smTviGg6vwZjT+KomW0QuJ4wZsJ3hqXsoDz9iYD4UxBnidQdB04t89/1O/w1cDnyilFU=';
 // Get POST body content
 $content = file_get_contents('php://input');
-$content = '["ดี","สวัสดี","ชื่อไร","ไร้ชื่อไร้แซ่","สบายดี","ก็สบายดีอยู่","หิวเปล่า","เป็นบอทจะหิวไปทำไม"]';
 // Parse JSON
 $events = json_decode($content, true);
 // Validate parsed JSON data
