@@ -5,6 +5,7 @@ $content = file_get_contents('php://input');
 //print_r($content);
 // Parse JSON
 $events = json_decode($content, true);
+print_r($events);exit();
 // Validate parsed JSON data
 if (!is_null($events['events'])) {
 	// Loop through each event
