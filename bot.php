@@ -16,7 +16,9 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
-
+			if($text=='Diew'){
+				$text = 'คุณเก่งมากๆๆเลย ';	
+			}
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
