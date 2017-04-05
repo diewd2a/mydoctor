@@ -26,7 +26,7 @@ if (!is_null($events['events'])) {
 	}
 	$messages = [
 				'type' => 'text',
-				'text' => $text.' msg_id '.$id.'  UID  '.$event['source']['userId'];
+				'text' => $text;
 			    ];
 
 			// Make a POST Request to Messaging API to reply to sender
