@@ -21,7 +21,9 @@ if (!is_null($events['events'])) {
 				$text = 'คุณเก่งมากๆๆเลย ';	
 			}
 			// Build message to reply back
-			$messages = [
+ 		}
+	}
+	$messages = [
 				'type' => 'text',
 				'text' => $text.'\r\n'.$key_text
 			];
@@ -46,7 +48,5 @@ if (!is_null($events['events'])) {
 
 			echo $result . '\r\n';
 			exit();
-		}
-	}
 }
 //echo 'OK';
